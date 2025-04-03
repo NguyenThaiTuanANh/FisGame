@@ -58,11 +58,11 @@
         }
 
         var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/Test.loader.js";
+        var loaderUrl = buildUrl + "/BuildTest.loader.js";
         var config = {
-            dataUrl: buildUrl + "/Test.data.unityweb",
-            frameworkUrl: buildUrl + "/Test.framework.js.unityweb",
-            codeUrl: buildUrl + "/Test.wasm.unityweb",
+            dataUrl: buildUrl + "/BuildTest.data.unityweb",
+            frameworkUrl: buildUrl + "/BuildTest.framework.js.unityweb",
+            codeUrl: buildUrl + "/BuildTest.wasm.unityweb",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "IdaFightSoma",
@@ -126,6 +126,7 @@
 
         window.addEventListener("resize", resizeCanvas);
         window.addEventListener("load", resizeCanvas);
+
 
         var script = document.createElement("script");
         script.src = loaderUrl;
